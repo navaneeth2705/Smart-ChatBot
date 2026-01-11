@@ -25,7 +25,7 @@ while True:
 
     # Exit
     if user_input == "exit":
-        print(f"Bot: Goodbye {name}! Take care 👋")
+        print(f"Bot: Goodbye {name}! Take care")
         break
 
     # Mood detection
@@ -33,7 +33,6 @@ while True:
     elif "happy" in user_input or "good" in user_input or "great" in user_input:
         responses = [
             "That's wonderful to hear!!",
-            "Keep smiling, it suits you",
                 ]
         print("Bot:", random.choice(responses))
 
@@ -74,5 +73,6 @@ while True:
             print("Bot: I couldn’t find information on that.")
         except:
             print("Bot: Something went wrong. Try again.")
+
 
 
