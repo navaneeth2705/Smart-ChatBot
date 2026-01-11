@@ -11,12 +11,12 @@ def bot_type(text):
     print()
 
 print("="*45)
-bot_type("🤖 Smart Campus Companion Bot")
+bot_type("Smart Campus Companion Bot")
 bot_type("Type 'exit' to end the chat")
 print("="*45)
 
 
-name = input("Bot: What is your name? 😊\nYou: ")
+name = input("Bot: What is your name? \nYou: ")
 
 print(f"Bot: Nice to meet you, {name}! How are you feeling today?")
 
@@ -30,31 +30,28 @@ while True:
 
     # Mood detection
 
-    elif "2am happy" in user_input or "good" in user_input or "great" in user_input:
+    elif "happy" in user_input or "good" in user_input or "great" in user_input:
         responses = [
-            "That's wonderful to hear! 😄",
-            "Keep smiling, it suits you 😊",
-            "Positive vibes only ✨"
+            "That's wonderful to hear!!",
+            "Keep smiling, it suits you",
                 ]
         print("Bot:", random.choice(responses))
 
     elif "internship" in user_input:
-        print("Bot: Internships help you gain real-world experience. Start with small projects and apply early 💼")
+        print("Bot: Internships help you gain real-world experience. Start with small projects and apply early")
 
     elif "motivate me" in user_input:
-        print("Bot: You’re doing better than you think. Keep going, one step at a time 💪🔥")
+        print("Bot: You’re doing better than you think. Keep going, one step at a time")
 
     elif "exam fear" in user_input:
-        print("Bot: Exams can be stressful. Make a simple timetable and revise daily 📚")
+        print("Bot: Exams can be stressful. Make a simple timetable and revise daily ")
 
     elif "project" in user_input:
-        print("Bot: Projects improve your resume. This chatbot itself is a great start 🚀")
+        print("Bot: Projects improve your resume. This chatbot itself is a great start ")
 
     elif "I am sad" in user_input or "tired" in user_input or "bad" in user_input:
         responses = [
-            "I'm sorry to hear that 😔",
-            "It's okay to feel this way. I'm here for you 🤍",
-            "Take a deep breath. Things will get better 🌈"
+            "Take a deep breath. Things will get better "
                 ]
 
     # College info
@@ -77,4 +74,5 @@ while True:
             print("Bot: I couldn’t find information on that.")
         except:
             print("Bot: Something went wrong. Try again.")
+
 
